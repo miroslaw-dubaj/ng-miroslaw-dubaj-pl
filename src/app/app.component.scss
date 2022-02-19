@@ -1,0 +1,24 @@
+main {
+    margin: 0 auto;
+    min-width: 400px;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1;
+    &.header {
+        flex: 0 1 150px;
+        align-items: flex-start;
+    }
+}
+
+aside {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
