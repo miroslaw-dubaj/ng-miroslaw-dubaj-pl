@@ -6,7 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .card {
     margin: 20px;
     &__header-image {
-        background-image: url('./assets/md.png');
+        background-image: url('./assets/md-icon.png');
         background-size: cover;
         &--pgs {
             background-image: url('./assets/pgs.jpg');

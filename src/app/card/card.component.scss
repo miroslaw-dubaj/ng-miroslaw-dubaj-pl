@@ -1,4 +1,17 @@
 .accordion-headers-align .mat-expansion-panel-header-description {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mat-card-footer {
+  padding: 2px 5px;
+  color: lightgray;
+  font-size: 10px;
+}
+
+.mat-card-actions {
+  margin-bottom: 0;
+  a {
+    margin-right: 1rem;
+  }
 }

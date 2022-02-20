@@ -16,6 +16,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { ContactsComponent } from './contacts/contacts.component';
 import { CardComponent } from './card/card.component';
@@ -48,6 +50,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatIconModule,
     MatCardModule,
     MatExpansionModule,
+    MatTabsModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

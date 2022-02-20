@@ -1,28 +1,72 @@
-<main>
-  <section class="header">
-    <mat-card class="card mat-elevation-z6">
-      <mat-card-header>
-        <div mat-card-avatar class="card__header-image"></div>
-        <mat-card-title>Mirosław Dubaj</mat-card-title>
-        <mat-card-subtitle>{{'CardSubtitle' | translate}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="../assets/bg.jpg" alt="My office">
-      <mat-card-content>
-        <pre class="card__code"><code>  let me = work => "{{ '{' }}"for (;;) "{{ '{' }}"you(work);"{{ '}}' }}";
+<mat-drawer-container autosize hasBackdrop>
+  <mat-drawer #drawer class="aboutme-sidenav" mode="side">
+    <p>Currently, new Software Developer at PGS Software S.A.</p>
+    <p>
+      Ex Software Development Specialist at Primetals Technologies working on in-house product involving usage of
+      technologies such as Angular 8, Material Angular along with other must know techs i.a. SCSS, Git, NPM, Webpack,
+      Docker, Rancher...
+      Previously working with other technologies such as React.js (with Typescript), Redux, Office UI Fabric, Vue.js,
+      Vuex, Symfony, Twig, Axios among many others.
+    </p>
+    <p>
+      Owner of Centero.pl, a specialized online store for military and law enforcement personel as well as outdoor and
+      shooting sports enthusiasts. Additionally providing training services in the field of practical/defensive
+      shooting.
+    </p>
+
+    <p>
+      Master of Arts in the field of Tourism and Recreation. Bachelor of Arts in Hospitality Management.
+      Certified sports shooting, practital and dynamic shooting, combat shooting instructor.
+      Self-taught web developer, graphic, photographer and filmmaker.
+    </p>
+    <p>
+      Vice-Chairman of the board in guns collectors association "Podkarpackie Stowarzyszenie Taktyczno Kolekcjonerskie"
+    </p>
+  </mat-drawer>
+  <main>
+    <section class="header">
+      <mat-card class="card mat-elevation-z6">
+        <mat-card-header>
+          <div mat-card-avatar class="card__header-image"></div>
+          <mat-card-title>Mirosław Dubaj</mat-card-title>
+          <mat-card-subtitle>{{'CardSubtitle' | translate}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../assets/bg.jpg" alt="My office">
+        <mat-card-content>
+          <pre class="card__code"><code>  let me = work => "{{ '{' }}"for (;;) "{{ '{' }}"you(work);"{{ '}}' }}";
   const you = boss => alert(`Yes $"{{ '{' }}"boss"{{ '}' }}"!`);
   me('I got the job!');</code></pre>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-raised-button color="accent" (click)="openBottomSheet()">{{'ContactMe' | translate}}</button>
-      </mat-card-actions>
-    </mat-card>
-  </section>
-  <section>
-    <ng-container *ngFor="let card of cards">
-      <app-card [companyName]="card.companyName" [companyLogoClass]="card.companyLogoClass" [jobTitle]="card.jobTitle"></app-card>
-    </ng-container>
-  </section>
-</main>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-raised-button color="accent" (click)="openBottomSheet()">{{'ContactMe' | translate}}</button>
+          <button mat-raised-button color="primary" (click)="drawer.toggle()">{{'AboutMe' | translate}}</button>
+        </mat-card-actions>
+      </mat-card>
+    </section>
+    <section>
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab [label]="'Experience' | translate">
+          <ng-container *ngFor="let card of cards">
+            <app-card [companyName]="card.companyName" [companyLogoClass]="card.companyLogoClass"
+              [jobTitle]="card.jobTitle" [date]="card.date" [projects]="card.projects" [link]="card.link"></app-card>
+          </ng-container>
+        </mat-tab>
+        <mat-tab [label]="'Skills' | translate">
+          <div style="display: flex; flex-direction: column; justify-content: center;">
+            <br>
+            <button mat-flat-button>{{'WorkInProgress' | translate}}<mat-icon>construction</mat-icon></button>
+          </div>
+        </mat-tab>
+        <mat-tab [label]="'Qualifications' | translate">
+          <div style="display: flex; flex-direction: column; justify-content: center;">
+            <br>
+            <button mat-flat-button>{{'WorkInProgress' | translate}}<mat-icon>construction</mat-icon></button>
+          </div>        </mat-tab>
+      </mat-tab-group>
+
+    </section>
+  </main>
+</mat-drawer-container>
 
 <aside>
   <div>
