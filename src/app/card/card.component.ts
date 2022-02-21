@@ -12,7 +12,7 @@ export class CardComponent implements OnInit {
   @Input() jobTitle: string = 'SoftwareDeveloper';
   @Input() companyLogoClass: string = 'card__header-image card__header-image--pgs';
   @Input() link: string = '';
-  @Input() projects: {title: string, description: string, details: string}[] = [];
+  @Input() projects: {title: string, description: string, details: string, icons?: string[]}[] = [];
 
   step = 0;
 

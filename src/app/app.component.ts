@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TranslateService } from '@ngx-translate/core';
+import { SvgIconsRegistryService } from './svg-icons-registry.service';
 
 @Component({
   selector: 'app-root',
@@ -22,12 +23,14 @@ export class AppComponent {
         {
           title: 'PGSProject1Title',
           description: "PGSProject1Description",
-          details: 'PGSProject1Details'
+          details: 'PGSProject1Details',
+          icons: ['windows', 'visualstudiocode', 'jirasoftware', 'bitbucket', 'angular', 'materialdesign', 'cypress', 'postman']
         },
         {
           title: 'PGSProject2Title',
           description: "PGSProject2Description",
-          details: 'PGSProject2Details'
+          details: 'PGSProject2Details',
+          icons: ['windows', 'visualstudiocode', 'azuredevops', 'angular', 'materialdesign', 'cypress', 'swagger']
         }
       ]
     },
@@ -41,7 +44,8 @@ export class AppComponent {
         {
           title: 'PMTProject1Title',
           description: "PMTProject1Description",
-          details: 'PMTProject1Details'
+          details: 'PMTProject1Details',
+          icons: ['windows', 'visualstudiocode', 'azuredevops', 'gitlab', 'typescript', 'angular', 'materialdesign', 'bootstrap', 'postman', 'swagger']
         },
       ]
     },
@@ -55,7 +59,8 @@ export class AppComponent {
         {
           title: 'SDAProject1Title',
           description: "SDAProject1Description",
-          details: 'SDAProject1Details'
+          details: 'SDAProject1Details',
+          icons: ['windows', 'visualstudiocode', 'git', 'github', 'javascript', 'html5', 'css3', 'bootstrap', 'typescript', 'sass', 'angular', 'materialdesign']
         },
       ]
     },
@@ -69,17 +74,20 @@ export class AppComponent {
         {
           title: 'DarlanProject1Title',
           description: "DarlanProject1Description",
-          details: 'DarlanProject1Details'
+          details: 'DarlanProject1Details',
+          icons: ['windows', 'visualstudiocode', 'github', 'mariadb', 'typescript', 'nodedotjs', 'vuedotjs', 'quasar']
         },
         {
           title: 'DarlanProject2Title',
           description: "DarlanProject2Description",
-          details: 'DarlanProject2Details'
+          details: 'DarlanProject2Details',
+          icons: ['windows', 'visualstudiocode', 'github', 'mariadb', 'javascript', 'nodedotjs', 'vuedotjs', 'quasar']
         },
         {
           title: 'DarlanProject3Title',
           description: "DarlanProject3Description",
-          details: 'DarlanProject3Details'
+          details: 'DarlanProject3Details',
+          icons: ['windows', 'visualstudiocode', 'github', 'mariadb', 'javascript', 'php', 'vuedotjs']
         },
       ]
     },
@@ -157,7 +165,8 @@ export class AppComponent {
 
   constructor(
     private _bottomSheet: MatBottomSheet,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private svgRegistry: SvgIconsRegistryService
   ) {
     translate.use(this.currentLang);
   }

@@ -13,7 +13,7 @@
           {{ 'Projects' | translate }}
         </h2>
 
-        <mat-accordion>
+        <mat-accordion class="accordion-headers-align">
           <mat-expansion-panel *ngFor="let project of projects">
             <mat-expansion-panel-header>
               <mat-panel-title>
@@ -21,6 +21,9 @@
               </mat-panel-title>
               <mat-panel-description>
                 {{project.description | translate}}
+                <div class="icons">
+                  <mat-icon [svgIcon]="icon" *ngFor="let icon of project.icons"></mat-icon>
+                </div>
               </mat-panel-description>
             </mat-expansion-panel-header>
             {{project.details | translate}}
