@@ -52,6 +52,10 @@ export class SvgIconsRegistryService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/dotnet.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      `facebook`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/facebook.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       `gimp`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/gimp.svg")
     );
@@ -90,6 +94,10 @@ export class SvgIconsRegistryService {
     this.matIconRegistry.addSvgIcon(
       `linux`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/linux.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      `linkedin`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/linkedin.svg")
     );
     this.matIconRegistry.addSvgIcon(
       `lodash`,
@@ -166,6 +174,10 @@ export class SvgIconsRegistryService {
     this.matIconRegistry.addSvgIcon(
       `sass`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/sass.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      `stackoverflow`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/stackoverflow.svg")
     );
     this.matIconRegistry.addSvgIcon(
       `swagger`,

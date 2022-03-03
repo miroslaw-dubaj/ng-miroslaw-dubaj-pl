@@ -38,6 +38,26 @@
   me('I got the job!');</code></pre>
         </mat-card-content>
         <mat-card-actions align="end">
+          <a href="https://stackoverflow.com/users/9135951/miros%c5%82aw" target="_blank">
+            <button mat-icon-button>
+              <mat-icon svgIcon="stackoverflow"></mat-icon>
+            </button>
+          </a>
+          <a href="https://github.com/miroslaw-dubaj" target="_blank">
+            <button mat-icon-button>
+              <mat-icon svgIcon="github"></mat-icon>
+            </button>
+          </a>
+          <a href="https://www.linkedin.com/in/miroslaw-dubaj-30393999/" target="_blank">
+            <button mat-icon-button>
+              <mat-icon svgIcon="linkedin"></mat-icon>
+            </button>
+          </a>
+          <a href="https://www.facebook.com/miroslaw.dubaj/" target="_blank">
+            <button mat-icon-button>
+              <mat-icon svgIcon="facebook"></mat-icon>
+            </button>
+          </a>
           <button mat-raised-button color="accent" (click)="openBottomSheet()">{{'ContactMe' | translate}}</button>
           <button mat-raised-button color="primary" (click)="drawer.toggle()">{{'AboutMe' | translate}}</button>
         </mat-card-actions>
@@ -52,16 +72,62 @@
           </ng-container>
         </mat-tab>
         <mat-tab [label]="'Skills' | translate">
-          <div style="display: flex; flex-direction: column; justify-content: center;">
-            <br>
-            <button mat-flat-button>{{'WorkInProgress' | translate}}<mat-icon>construction</mat-icon></button>
-          </div>
+          <mat-list>
+            <div mat-subheader>{{'Programming' | translate}}</div>
+            <mat-list-item *ngFor="let skill of skills.programming">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.experience}}</div>
+                            <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                    <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>{{'Technologies' | translate}}</div>
+            <mat-list-item *ngFor="let skill of skills.technologies">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.experience}}</div>
+                            <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                    <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>{{'Tools' | translate}}</div>
+            <mat-list-item *ngFor="let skill of skills.tools">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.experience}}</div>
+              <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                    <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>{{'Other' | translate}}</div>
+            <mat-list-item *ngFor="let skill of skills.other">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.experience}}</div>
+              <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                  <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+          </mat-list>
         </mat-tab>
         <mat-tab [label]="'Qualifications' | translate">
           <div style="display: flex; flex-direction: column; justify-content: center;">
             <br>
             <button mat-flat-button>{{'WorkInProgress' | translate}}<mat-icon>construction</mat-icon></button>
-          </div>        </mat-tab>
+          </div>
+        </mat-tab>
       </mat-tab-group>
 
     </section>
