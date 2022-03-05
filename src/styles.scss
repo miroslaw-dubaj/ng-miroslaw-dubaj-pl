@@ -1,50 +1,148 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
 .card {
+  margin-top: 6px;
+  @media screen and (min-width: 1080px) {
     margin: 20px;
-    &__header-image {
-        background-image: url('./assets/md-icon.png');
-        background-size: cover;
-        &--pgs {
-            background-image: url('./assets/pgs.jpg');
-        }
-        &--sda {
-            background-image: url('./assets/sda-logo.svg');
-        }
-        &--darlan {
-            background-image: url('./assets/darlan.jpg');
-        }
-        &--qupi {
-            background-image: url('./assets/qupi.jpg');
-        }
-        &--pmt {
-            background-image: url('./assets/pmt.png');
-        }
-        &--ibs {
-            background-image: url('./assets/i-bs.jpg');
-        }
-        &--cyfrowa {
-            background-image: url('./assets/cyfrowa.jpg');
-        }
+  }
+  &__header-image {
+    background-image: url("./assets/md-icon.png");
+    background-size: cover;
+    &--pgs {
+      background-image: url("./assets/pgs.jpg");
+    }
+    &--sda {
+      background-image: url("./assets/sda-logo.svg");
+    }
+    &--darlan {
+      background-image: url("./assets/darlan.jpg");
+    }
+    &--qupi {
+      background-image: url("./assets/qupi.jpg");
+    }
+    &--pmt {
+      background-image: url("./assets/pmt.png");
+    }
+    &--ibs {
+      background-image: url("./assets/i-bs.jpg");
+    }
+    &--cyfrowa {
+      background-image: url("./assets/cyfrowa.jpg");
+    }
+  }
+
+  &__code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 8px;
+    line-height: 1;
+    margin-bottom: 1em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 0.5em 1em;
+    display: block;
+    word-wrap: break-word;
+  }
+
+  @media screen and (min-width: 1080px) {
+    &__code {
+      background: #f4f4f4;
+      border: 1px solid #ddd;
+      border-left: 3px solid #f36d33;
+      color: #666;
+      page-break-inside: avoid;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: 1em 1.5em;
+      display: block;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.mat-accordion {
+  .mat-expansion-panel-header {
+    font-size: 10px;
+  }
+
+  .icons {
+    display: none;
+  }
+  @media screen and (min-width: 1080px) {
+    .mat-expansion-panel-header {
+      font-size: 15px;
+    }
+  
+    .icons {
+      display: block;
+  
+      .mat-icon {
+        width: 16px;
+      }
+    }
+  }
+  @media screen and (min-width: 1360px) {
+    .icons {
+      display: block;
+  
+      .mat-icon {
+        width: 24px;
+      }
+    }
+  }
+}
+
+
+
+section.header {
+  .mat-card-actions {
+    a {
+      width: 30px;
+    }
+    button {
+      font-size: 12px;
+    }
+    
+    flex: 1;
+    gap: 6px;
+    flex-flow: row wrap;
+
+    .social-icons {
+        display: flex;
+        flex: 1;
     }
 
-    &__code {
-        background: #f4f4f4;
-        border: 1px solid #ddd;
-        border-left: 3px solid #f36d33;
-        color: #666;
-        page-break-inside: avoid;
-        font-family: monospace;
-        font-size: 15px;
-        line-height: 1.6;
-        margin-bottom: 1.6em;
-        max-width: 100%;
-        overflow: auto;
-        padding: 1em 1.5em;
-        display: block;
-        word-wrap: break-word;        
+    @media screen and (min-width: 400px) {
+        a {
+            width: 40px;
+          }
+          button {
+            font-size: 14px;
+          }
     }
+  }
+}
+
+.mat-tab-label {
+  font-size: 10px;
+  @media screen and (min-width: 1080px) {
+    font-size: 14px;
+  }
 }

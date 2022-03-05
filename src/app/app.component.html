@@ -38,26 +38,28 @@
   me('I got the job!');</code></pre>
         </mat-card-content>
         <mat-card-actions align="end">
-          <a href="https://stackoverflow.com/users/9135951/miros%c5%82aw" target="_blank">
-            <button mat-icon-button>
-              <mat-icon svgIcon="stackoverflow"></mat-icon>
-            </button>
-          </a>
-          <a href="https://github.com/miroslaw-dubaj" target="_blank">
-            <button mat-icon-button>
-              <mat-icon svgIcon="github"></mat-icon>
-            </button>
-          </a>
-          <a href="https://www.linkedin.com/in/miroslaw-dubaj-30393999/" target="_blank">
-            <button mat-icon-button>
-              <mat-icon svgIcon="linkedin"></mat-icon>
-            </button>
-          </a>
-          <a href="https://www.facebook.com/miroslaw.dubaj/" target="_blank">
-            <button mat-icon-button>
-              <mat-icon svgIcon="facebook"></mat-icon>
-            </button>
-          </a>
+          <div class="social-icons">
+            <a href="https://stackoverflow.com/users/9135951/miros%c5%82aw" target="_blank">
+              <button mat-icon-button>
+                <mat-icon svgIcon="stackoverflow"></mat-icon>
+              </button>
+            </a>
+            <a href="https://github.com/miroslaw-dubaj" target="_blank">
+              <button mat-icon-button>
+                <mat-icon svgIcon="github"></mat-icon>
+              </button>
+            </a>
+            <a href="https://www.linkedin.com/in/miroslaw-dubaj-30393999/" target="_blank">
+              <button mat-icon-button>
+                <mat-icon svgIcon="linkedin"></mat-icon>
+              </button>
+            </a>
+            <a href="https://www.facebook.com/miroslaw.dubaj/" target="_blank">
+              <button mat-icon-button>
+                <mat-icon svgIcon="facebook"></mat-icon>
+              </button>
+            </a>
+          </div>
           <button mat-raised-button color="accent" (click)="openBottomSheet()">{{'ContactMe' | translate}}</button>
           <button mat-raised-button color="primary" (click)="drawer.toggle()">{{'AboutMe' | translate}}</button>
         </mat-card-actions>

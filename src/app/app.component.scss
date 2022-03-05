@@ -1,6 +1,5 @@
 main {
   margin: 0 auto;
-  min-width: 400px;
   max-width: 1920px;
   display: flex;
   justify-content: center;
@@ -12,8 +11,11 @@ section {
   flex-flow: column;
   flex: 1 1;
   &.header {
-    flex: 0 1 150px;
     align-items: flex-start;
+
+    @media screen and (min-width: 1080px) {
+      flex: 0 1 150px;
+    }
   }
 }
 
@@ -25,6 +27,6 @@ aside {
 }
 
 .aboutme-sidenav {
-  width: 60%;
+  width: 70%;
   padding: 2rem;
 }
