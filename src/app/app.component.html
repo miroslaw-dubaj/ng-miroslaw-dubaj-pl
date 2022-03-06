@@ -125,10 +125,56 @@
           </mat-list>
         </mat-tab>
         <mat-tab [label]="'Qualifications' | translate">
-          <div style="display: flex; flex-direction: column; justify-content: center;">
-            <br>
-            <button mat-flat-button>{{'WorkInProgress' | translate}}<mat-icon>construction</mat-icon></button>
-          </div>
+          <mat-list>
+            <div mat-subheader>{{'Courses' | translate}}</div>
+            <mat-list-item *ngFor="let skill of qualifications.courses">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.duration}}</div>
+              <div mat-line>{{skill.date | date: 'shortDate' : '' : translate.currentLang}}</div>
+              <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                    <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>{{'Education' | translate}}</div>
+            <mat-list-item *ngFor="let skill of qualifications.education">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.duration}}</div>
+                            <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                    <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>{{'Languages' | translate}}</div>
+            <mat-list-item *ngFor="let skill of qualifications.languages">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.duration}}</div>
+                            <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                    <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <div mat-subheader>{{'Other' | translate}}</div>
+            <mat-list-item *ngFor="let skill of qualifications.other">
+              <mat-icon matListIcon [svgIcon]="skill.icon"></mat-icon>
+              <div mat-line>{{skill.name}}</div>
+              <div mat-line>{{skill.duration}}</div>
+              <div mat-line>
+                <ng-container *ngFor="let level of skill.levels">
+                  <mat-icon>{{level === 1 ? 'star': 'star_border'}}</mat-icon>
+                </ng-container>
+              </div>
+            </mat-list-item>
+          </mat-list>
         </mat-tab>
       </mat-tab-group>
 
@@ -137,9 +183,12 @@
 </mat-drawer-container>
 
 <aside>
-  <div>
-    <button mat-mini-fab color="warn" aria-label="Change language button" (click)="toggleCurrentLang()">
-      {{this.currentLang === 'en' ? 'pl' : 'en'}}
-    </button>
+  <div class="languages">
+    <div *ngFor="let lang of qualifications.languages">
+      <mat-icon [svgIcon]="lang.icon"></mat-icon>
+      <button mat-mini-fab [color]="this.currentLang === lang.code ? 'warn': 'primary'" aria-label="Change language" (click)="toggleCurrentLang(lang.code)">
+        {{lang.icon}}
+      </button>
+    </div>
   </div>
 </aside>

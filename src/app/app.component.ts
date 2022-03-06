@@ -3,7 +3,11 @@ import { MatBottomSheet } from '@angular/material/bottom-sheet';
 import { ContactsComponent } from './contacts/contacts.component';
 import { TranslateService } from '@ngx-translate/core';
 import { SvgIconsRegistryService } from './svg-icons-registry.service';
-
+import { registerLocaleData } from '@angular/common';
+import localeEnGb from '@angular/common/locales/en-GB';
+import localeUk from '@angular/common/locales/uk';
+import localeDe from '@angular/common/locales/de';
+import localePl from '@angular/common/locales/pl';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -240,23 +244,102 @@ export class AppComponent {
     ],
   }
 
+  qualifications = {
+    courses: [
+      {
+        name: 'Angular Material Masterclass',
+        icon: 'udemy',
+        start: '',
+        end: '',
+        date: '09.11.2021',
+        duration: 3,
+        levels: []
+      }
+    ],
+    education: [
+      {
+        name: 'typescript',
+        icon: '',
+        start: '',
+        end: '',
+        date: '',
+        duration: 3.5,
+        levels: []
+      }
+    ],
+    languages: [
+      {
+        name: 'Polish',
+        icon: 'pl',
+        code: 'pl',
+        start: '',
+        end: '',
+        date: '',
+        duration: 3.5,
+        levels: [1,1,1,1,1]
+      },
+      {
+        name: 'English',
+        icon: 'gb',
+        code: 'en',
+        start: '',
+        end: '',
+        date: '',
+        duration: 3.5,
+        levels: [1,1,1,1,0]
+      },
+      {
+        name: 'German',
+        icon: 'de',
+        code: 'de',
+        start: '',
+        end: '',
+        date: '',
+        duration: 3.5,
+        levels: [1,0,0,0,0]
+      },
+      {
+        name: 'Ukrainian',
+        icon: 'ua',
+        code: 'ua',
+        start: '',
+        end: '',
+        date: '',
+        duration: 3.5,
+        levels: [1,0,0,0,0]
+      }
+    ],
+    other: [
+      {
+        name: 'typescript',
+        icon: '',
+        start: '',
+        end: '',
+        date: '',
+        duration: 3.5,
+        levels: []
+      }
+    ],
+  }
 
   constructor(
     private _bottomSheet: MatBottomSheet,
-    private translate: TranslateService,
+    public translate: TranslateService,
     private svgRegistry: SvgIconsRegistryService
   ) {
     translate.use(this.currentLang);
+    registerLocaleData(localeEnGb, 'en');
+    registerLocaleData(localeUk, 'uk');
+    registerLocaleData(localePl, 'pl');
+    registerLocaleData(localeDe, 'de');
   }
 
   openBottomSheet(): void {
     this._bottomSheet.open(ContactsComponent);
   }
 
-  toggleCurrentLang() {
-    this.currentLang = this.currentLang === 'en' ? 'pl' : 'en';
+  toggleCurrentLang(lang: string) {
+    this.currentLang = lang;
     this.translate.use(this.currentLang);
   }
-
-
 }

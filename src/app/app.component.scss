@@ -24,6 +24,17 @@ aside {
   top: 20px;
   right: 20px;
   z-index: 1;
+
+  .languages {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
 }
 
 .aboutme-sidenav {

@@ -124,6 +124,10 @@ export class SvgIconsRegistryService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/nestjs.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      `nodemon`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/nodemon.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       `nodedotjs`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/nodedotjs.svg")
     );
@@ -196,6 +200,10 @@ export class SvgIconsRegistryService {
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/ubuntu.svg")
     );
     this.matIconRegistry.addSvgIcon(
+      `udemy`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/udemy.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
       `visualstudio`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/visualstudio.svg")
     );
@@ -223,6 +231,24 @@ export class SvgIconsRegistryService {
       `wordpress`,
       this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/icons/wordpress.svg")
     );
-    console.log(matIconRegistry)
+
+    console.log(matIconRegistry);
+
+    this.matIconRegistry.addSvgIcon(
+      `gb`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/flags/gb.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      `pl`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/flags/pl.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      `ua`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/flags/ua.svg")
+    );
+    this.matIconRegistry.addSvgIcon(
+      `de`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/flags/de.svg")
+    );
   }
 }
