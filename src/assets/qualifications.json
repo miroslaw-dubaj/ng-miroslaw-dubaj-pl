@@ -1,0 +1,77 @@
+{
+  "courses": [
+    {
+      "name": "Angular Material Masterclass",
+      "icon": "udemy",
+      "start": "",
+      "end": "",
+      "date": "09.11.2021",
+      "duration": 3,
+      "levels": []
+    }
+  ],
+  "education": [
+    {
+      "name": "typescript",
+      "icon": "",
+      "start": "",
+      "end": "",
+      "date": "",
+      "duration": 3.5,
+      "levels": []
+    }
+  ],
+  "languages": [
+    {
+      "name": "Polish",
+      "icon": "pl",
+      "code": "pl",
+      "start": "",
+      "end": "",
+      "date": "",
+      "duration": 3.5,
+      "levels": [1, 1, 1, 1, 1]
+    },
+    {
+      "name": "English",
+      "icon": "gb",
+      "code": "en",
+      "start": "",
+      "end": "",
+      "date": "",
+      "duration": 3.5,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "German",
+      "icon": "de",
+      "code": "de",
+      "start": "",
+      "end": "",
+      "date": "",
+      "duration": 3.5,
+      "levels": [1, 0, 0, 0, 0]
+    },
+    {
+      "name": "Ukrainian",
+      "icon": "ua",
+      "code": "ua",
+      "start": "",
+      "end": "",
+      "date": "",
+      "duration": 3.5,
+      "levels": [1, 0, 0, 0, 0]
+    }
+  ],
+  "other": [
+    {
+      "name": "typescript",
+      "icon": "",
+      "start": "",
+      "end": "",
+      "date": "",
+      "duration": 3.5,
+      "levels": []
+    }
+  ]
+}
