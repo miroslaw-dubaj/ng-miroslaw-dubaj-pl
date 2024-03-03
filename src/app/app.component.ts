@@ -16,7 +16,6 @@ import { AssetsService } from './assets.service';
 })
 export class AppComponent implements OnInit {
   currentLang = 'en';
-
   cards: any[] = [];
   skills: any = {};
   qualifications: any  = {}
@@ -32,8 +31,6 @@ export class AppComponent implements OnInit {
       this.qualifications = data;
     });
   }
-
-
 
   constructor(
     private _bottomSheet: MatBottomSheet,

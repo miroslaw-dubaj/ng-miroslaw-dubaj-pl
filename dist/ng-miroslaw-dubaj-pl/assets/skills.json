@@ -1,0 +1,76 @@
+{
+  "programming": [
+    {
+      "name": "JavaScript",
+      "icon": "javascript",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "TypeScript",
+      "icon": "typescript",
+      "experience": 3,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "HTML",
+      "icon": "html5",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "CSS",
+      "icon": "css3",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Sass",
+      "icon": "sass",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Java",
+      "icon": "java",
+      "experience": 0.5,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "PHP7",
+      "icon": "php",
+      "experience": 1.25,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "C# 7",
+      "icon": "csharp",
+      "experience": 1.25,
+      "levels": [1, 0, 0, 0, 0]
+    }
+  ],
+  "technologies": [
+    {
+      "name": "HTML",
+      "icon": "html5",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 1, 0]
+    }
+  ],
+  "tools": [
+    {
+      "name": "typescript",
+      "icon": "typescript",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 0, 0]
+    }
+  ],
+  "other": [
+    {
+      "name": "typescript",
+      "icon": "typescript",
+      "experience": 3.5,
+      "levels": [1, 1, 1, 0, 0]
+    }
+  ]
+}
