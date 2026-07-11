@@ -82,6 +82,7 @@ function __symbol__(name) {
   return symbolPrefix + name;
 }
 function initZone() {
+  var _staticBlock;
   const performance = global['performance'];
   function mark(name) {
     performance && performance['mark'] && performance['mark'](name);
@@ -92,9 +93,7 @@ function initZone() {
   mark('Zone');
   class ZoneImpl {
     // tslint:disable-next-line:require-internal-with-underscore
-    static {
-      this.__symbol__ = __symbol__;
-    }
+
     static assertZonePatched() {
       if (global['Promise'] !== patches['ZoneAwarePromise']) {
         throw new Error('Zone.js has detected that ZoneAwarePromise `(window|global).Promise` ' + 'has been overwritten.\n' + 'Most likely cause is that a Promise polyfill has been loaded ' + 'after Zone.js (Polyfilling Promise api is not necessary when zone.js is loaded. ' + 'If you must load one, do so before loading zone.js.)');
@@ -327,7 +326,9 @@ function initZone() {
         zoneDelegates[i]._updateTaskCount(task.type, count);
       }
     }
+    static #_ = _staticBlock = () => this.__symbol__ = __symbol__;
   }
+  _staticBlock();
   const DELEGATE_ZS = {
     name: '',
     onHasTask: (delegate, _, target, hasTaskState) => delegate.hasTask(target, hasTaskState),
