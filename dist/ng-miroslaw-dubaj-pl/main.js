@@ -19,8 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 const routes = [];
 class AppRoutingModule {
   static {
-    this.ɵfac = function AppRoutingModule_Factory(t) {
-      return new (t || AppRoutingModule)();
+    this.ɵfac = function AppRoutingModule_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || AppRoutingModule)();
     };
   }
   static {
@@ -491,8 +491,8 @@ class AppComponent {
     this.translate.use(this.currentLang);
   }
   static {
-    this.ɵfac = function AppComponent_Factory(t) {
-      return new (t || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_10__.MatBottomSheet), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_11__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_assets_service__WEBPACK_IMPORTED_MODULE_1__.AssetsService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_svg_icons_registry_service__WEBPACK_IMPORTED_MODULE_2__.SvgIconsRegistryService));
+    this.ɵfac = function AppComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || AppComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_10__.MatBottomSheet), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_ngx_translate_core__WEBPACK_IMPORTED_MODULE_11__.TranslateService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_assets_service__WEBPACK_IMPORTED_MODULE_1__.AssetsService), _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdirectiveInject"](_svg_icons_registry_service__WEBPACK_IMPORTED_MODULE_2__.SvgIconsRegistryService));
     };
   }
   static {
@@ -737,8 +737,8 @@ function HttpLoaderFactory(http) {
 }
 class AppModule {
   static {
-    this.ɵfac = function AppModule_Factory(t) {
-      return new (t || AppModule)();
+    this.ɵfac = function AppModule_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || AppModule)();
     };
   }
   static {
@@ -797,8 +797,8 @@ class AssetsService {
     return this.http.get('/assets/qualifications.json');
   }
   static {
-    this.ɵfac = function AssetsService_Factory(t) {
-      return new (t || AssetsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient));
+    this.ɵfac = function AssetsService_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || AssetsService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient));
     };
   }
   static {
@@ -894,8 +894,8 @@ class CardComponent {
     this.step--;
   }
   static {
-    this.ɵfac = function CardComponent_Factory(t) {
-      return new (t || CardComponent)();
+    this.ɵfac = function CardComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || CardComponent)();
     };
   }
   static {
@@ -988,8 +988,8 @@ class ContactsComponent {
   constructor() {}
   ngOnInit() {}
   static {
-    this.ɵfac = function ContactsComponent_Factory(t) {
-      return new (t || ContactsComponent)();
+    this.ɵfac = function ContactsComponent_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || ContactsComponent)();
     };
   }
   static {
@@ -1122,8 +1122,8 @@ class SvgIconsRegistryService {
     this.matIconRegistry.addSvgIcon(`de`, this.domSanitizer.bypassSecurityTrustResourceUrl("../assets/flags/de.svg"));
   }
   static {
-    this.ɵfac = function SvgIconsRegistryService_Factory(t) {
-      return new (t || SvgIconsRegistryService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_material_icon__WEBPACK_IMPORTED_MODULE_1__.MatIconRegistry), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__.DomSanitizer));
+    this.ɵfac = function SvgIconsRegistryService_Factory(__ngFactoryType__) {
+      return new (__ngFactoryType__ || SvgIconsRegistryService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_material_icon__WEBPACK_IMPORTED_MODULE_1__.MatIconRegistry), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__.DomSanitizer));
     };
   }
   static {
