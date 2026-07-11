@@ -499,6 +499,7 @@ class AppComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
+      standalone: false,
       decls: 100,
       vars: 57,
       consts: [["drawer", ""], ["autosize", "", "hasBackdrop", ""], ["mode", "side", 1, "aboutme-sidenav"], [1, "header"], [1, "card", "mat-elevation-z6"], ["mat-card-avatar", "", 1, "card__header-image"], ["mat-card-image", "", "src", "../assets/bg.jpg", "alt", "My office"], [1, "card__code"], ["align", "end"], [1, "social-icons"], ["href", "https://stackoverflow.com/users/9135951/miros%c5%82aw", "target", "_blank"], ["mat-icon-button", ""], ["svgIcon", "stackoverflow"], ["href", "https://github.com/miroslaw-dubaj", "target", "_blank"], ["svgIcon", "github"], ["href", "https://www.linkedin.com/in/miroslaw-dubaj-30393999/", "target", "_blank"], ["svgIcon", "linkedin"], ["href", "https://www.facebook.com/miroslaw.dubaj/", "target", "_blank"], ["svgIcon", "facebook"], ["mat-raised-button", "", "color", "accent", 3, "click"], ["mat-raised-button", "", "color", "primary", 3, "click"], ["mat-align-tabs", "center"], [3, "label"], [4, "ngFor", "ngForOf"], ["mat-subheader", ""], [1, "languages"], [3, "companyName", "companyLogoClass", "jobTitle", "date", "projects", "link"], ["matListIcon", "", 3, "svgIcon"], ["mat-line", ""], [3, "svgIcon"], ["mat-mini-fab", "", "aria-label", "Change language", 3, "click", "color"]],
@@ -910,6 +911,7 @@ class CardComponent {
         link: "link",
         projects: "projects"
       },
+      standalone: false,
       decls: 23,
       vars: 14,
       consts: [[1, "card", "card--main", "mat-elevation-z6"], ["mat-card-avatar", ""], [1, "accordion-headers-align"], [4, "ngFor", "ngForOf"], ["align", "end"], ["target", "_blank", 3, "href"], ["mat-mini-fab", "", "aria-label", "Example icon button with a home icon"], [1, "icons"], [3, "svgIcon", 4, "ngFor", "ngForOf"], [3, "svgIcon"]],
@@ -996,6 +998,7 @@ class ContactsComponent {
     this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: ContactsComponent,
       selectors: [["app-contacts"]],
+      standalone: false,
       decls: 22,
       vars: 9,
       consts: [["matLine", "", "href", "tel:+48530111699"], ["mat-icon-button", ""], ["matLine", "", "href", "mailto:miroslaw.dubaj@gmail.com"], ["matLine", "", "href", "https://wa.me/48530111699"]],
