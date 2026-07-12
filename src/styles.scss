@@ -146,3 +146,19 @@ section.header {
     font-size: 14px;
   }
 }
+
+// Fix for mat-card-image in Angular Material 20 (MDC)
+// The image was overflowing card boundaries
+.mat-mdc-card-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+section.header .mat-mdc-card-image {
+  max-height: 200px;
+  @media screen and (min-width: 1080px) {
+    max-height: 300px;
+  }
+}
