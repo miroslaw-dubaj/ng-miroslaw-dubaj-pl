@@ -1,24 +1,118 @@
 {
   "courses": [
     {
-      "name": "Angular Material Masterclass",
+      "name": "Vue.js 3 - The Complete Guide",
+      "provider": "Udemy",
       "icon": "udemy",
-      "start": "",
-      "end": "",
+      "date": "2021",
+      "duration": 30,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "React - The Complete Guide",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2021",
+      "duration": 40,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "TypeScript: The Complete Developer's Guide",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2021",
+      "duration": 25,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Sass: From Beginner to Advanced",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2020",
+      "duration": 12,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Webpack 4: Beyond the Basics",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2020",
+      "duration": 15,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Web Design for Beginners",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2019",
+      "duration": 10,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "VS Code: Power User Course",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2020",
+      "duration": 8,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Docker for Web Developers",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2021",
+      "duration": 20,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "PWA - Progressive Web Apps",
+      "provider": "Udemy",
+      "icon": "udemy",
+      "date": "2021",
+      "duration": 15,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Angular Material Masterclass",
+      "provider": "Udemy",
+      "icon": "udemy",
       "date": "09.11.2021",
       "duration": 3,
-      "levels": []
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "FrontDev Academy",
+      "provider": "PGS Software",
+      "icon": "pgs",
+      "date": "03.2018 - 06.2018",
+      "duration": 20,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Full Stack JavaScript Development",
+      "provider": "Codilingus",
+      "icon": "code",
+      "date": "10.2017 - 07.2018",
+      "duration": 240,
+      "levels": [1, 1, 1, 0, 0]
     }
   ],
   "education": [
     {
-      "name": "typescript",
-      "icon": "",
-      "start": "",
-      "end": "",
+      "name": "Master's in Technology and Management",
+      "institution": "University of Information Technology and Management, Rzeszow",
+      "icon": "university",
       "date": "",
-      "duration": 3.5,
-      "levels": []
+      "duration": 0,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Bachelor's in Hospitality Management",
+      "institution": "Coventry University, UK",
+      "icon": "university",
+      "date": "",
+      "duration": 0,
+      "levels": [1, 1, 1, 1, 0]
     }
   ],
   "languages": [
@@ -26,51 +120,54 @@
       "name": "Polish",
       "icon": "pl",
       "code": "pl",
-      "start": "",
-      "end": "",
-      "date": "",
-      "duration": 3.5,
+      "level": "Native",
       "levels": [1, 1, 1, 1, 1]
     },
     {
       "name": "English",
       "icon": "gb",
       "code": "en",
-      "start": "",
-      "end": "",
-      "date": "",
-      "duration": 3.5,
+      "level": "Proficient",
       "levels": [1, 1, 1, 1, 0]
     },
     {
       "name": "German",
       "icon": "de",
       "code": "de",
-      "start": "",
-      "end": "",
-      "date": "",
-      "duration": 3.5,
+      "level": "Basic",
       "levels": [1, 0, 0, 0, 0]
     },
     {
       "name": "Ukrainian",
       "icon": "ua",
       "code": "uk",
-      "start": "",
-      "end": "",
-      "date": "",
-      "duration": 3.5,
+      "level": "Basic",
       "levels": [1, 0, 0, 0, 0]
     }
   ],
   "other": [
     {
-      "name": "typescript",
-      "icon": "",
-      "start": "",
-      "end": "",
+      "name": "Certified Shooting Instructor",
+      "institution": "PSTK - Guns Collectors Association",
+      "icon": "target",
       "date": "",
-      "duration": 3.5,
+      "duration": 0,
+      "levels": []
+    },
+    {
+      "name": "Shooting Judge & Coach",
+      "institution": "PSTK - Guns Collectors Association",
+      "icon": "target",
+      "date": "",
+      "duration": 0,
+      "levels": []
+    },
+    {
+      "name": "Vice President",
+      "institution": "PSTK - Guns Collectors Association",
+      "icon": "users",
+      "date": "",
+      "duration": 0,
       "levels": []
     }
   ]

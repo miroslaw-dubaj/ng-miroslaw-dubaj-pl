@@ -1,76 +1,328 @@
 {
   "programming": [
     {
-      "name": "JavaScript",
+      "name": "JavaScript ES6+",
       "icon": "javascript",
-      "experience": 3.5,
+      "experience": 7,
       "levels": [1, 1, 1, 1, 0]
     },
     {
       "name": "TypeScript",
       "icon": "typescript",
-      "experience": 3,
-      "levels": [1, 1, 1, 0, 0]
+      "experience": 5,
+      "levels": [1, 1, 1, 1, 0]
     },
     {
-      "name": "HTML",
+      "name": "HTML5",
       "icon": "html5",
-      "experience": 3.5,
-      "levels": [1, 1, 1, 1, 0]
-    },
-    {
-      "name": "CSS",
-      "icon": "css3",
-      "experience": 3.5,
-      "levels": [1, 1, 1, 1, 0]
-    },
-    {
-      "name": "Sass",
-      "icon": "sass",
-      "experience": 3.5,
+      "experience": 7,
       "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "CSS3",
+      "icon": "css3",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Sass/SCSS",
+      "icon": "sass",
+      "experience": 6,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "C# .NET",
+      "icon": "csharp",
+      "experience": 1,
+      "levels": [1, 1, 0, 0, 0]
     },
     {
       "name": "Java",
       "icon": "java",
-      "experience": 0.5,
+      "experience": 1,
       "levels": [1, 1, 0, 0, 0]
     },
     {
-      "name": "PHP7",
+      "name": "PHP",
       "icon": "php",
-      "experience": 1.25,
+      "experience": 2,
       "levels": [1, 1, 0, 0, 0]
-    },
-    {
-      "name": "C# 7",
-      "icon": "csharp",
-      "experience": 1.25,
-      "levels": [1, 0, 0, 0, 0]
     }
   ],
   "technologies": [
     {
-      "name": "HTML",
-      "icon": "html5",
-      "experience": 3.5,
+      "name": "Angular 6-18",
+      "icon": "angular",
+      "experience": 5,
+      "levels": [1, 1, 1, 1, 1]
+    },
+    {
+      "name": "RxJS",
+      "icon": "reactivex",
+      "experience": 5,
       "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "NgRx",
+      "icon": "ngrx",
+      "experience": 4,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "NestJS",
+      "icon": "nestjs",
+      "experience": 3,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Vue.js 2-3",
+      "icon": "vuedotjs",
+      "experience": 3,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Vuex",
+      "icon": "vuex",
+      "experience": 3,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Nuxt.js",
+      "icon": "nuxt",
+      "experience": 2,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "React",
+      "icon": "react",
+      "experience": 1,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Redux",
+      "icon": "redux",
+      "experience": 1,
+      "levels": [1, 0, 0, 0, 0]
+    },
+    {
+      "name": "Next.js",
+      "icon": "nextdotjs",
+      "experience": 1,
+      "levels": [1, 0, 0, 0, 0]
+    },
+    {
+      "name": "Node.js",
+      "icon": "nodedotjs",
+      "experience": 4,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Express",
+      "icon": "express",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Webpack",
+      "icon": "webpack",
+      "experience": 3,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "WordPress",
+      "icon": "wordpress",
+      "experience": 2,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "WooCommerce",
+      "icon": "woocommerce",
+      "experience": 2,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "bootstrap",
+      "experience": 6,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Angular Material",
+      "icon": "materialdesign",
+      "experience": 5,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "PrimeNG",
+      "icon": "primeng",
+      "experience": 3,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Kendo UI",
+      "icon": "progress",
+      "experience": 2,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "ECharts",
+      "icon": "apacheecharts",
+      "experience": 3,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Konva.js",
+      "icon": "konva",
+      "experience": 2,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "jQuery",
+      "icon": "jquery",
+      "experience": 4,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Lodash",
+      "icon": "lodash",
+      "experience": 4,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "MongoDB",
+      "icon": "mongodb",
+      "experience": 1,
+      "levels": [1, 0, 0, 0, 0]
+    },
+    {
+      "name": "SQL",
+      "icon": "postgresql",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
     }
   ],
   "tools": [
     {
-      "name": "typescript",
-      "icon": "typescript",
-      "experience": 3.5,
+      "name": "Git",
+      "icon": "git",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Docker",
+      "icon": "docker",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "VS Code",
+      "icon": "visualstudiocode",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 1]
+    },
+    {
+      "name": "Postman",
+      "icon": "postman",
+      "experience": 5,
       "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "NPM",
+      "icon": "npm",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Azure DevOps",
+      "icon": "azuredevops",
+      "experience": 4,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "GitLab",
+      "icon": "gitlab",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "GitHub",
+      "icon": "github",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Cypress",
+      "icon": "cypress",
+      "experience": 2,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Swagger",
+      "icon": "swagger",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Photoshop",
+      "icon": "adobephotoshop",
+      "experience": 4,
+      "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "GIMP",
+      "icon": "gimp",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "CorelDRAW",
+      "icon": "coreldraw",
+      "experience": 2,
+      "levels": [1, 0, 0, 0, 0]
     }
   ],
   "other": [
     {
-      "name": "typescript",
-      "icon": "typescript",
-      "experience": 3.5,
+      "name": "OOP",
+      "icon": "code",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "RESTful APIs",
+      "icon": "api",
+      "experience": 6,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Responsive Design",
+      "icon": "responsive",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 1]
+    },
+    {
+      "name": "PWA",
+      "icon": "pwa",
+      "experience": 3,
+      "levels": [1, 1, 0, 0, 0]
+    },
+    {
+      "name": "Design Patterns",
+      "icon": "pattern",
+      "experience": 4,
       "levels": [1, 1, 1, 0, 0]
+    },
+    {
+      "name": "Windows/WSL",
+      "icon": "windows",
+      "experience": 7,
+      "levels": [1, 1, 1, 1, 0]
+    },
+    {
+      "name": "Linux",
+      "icon": "linux",
+      "experience": 4,
+      "levels": [1, 1, 0, 0, 0]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-    "CardSubtitle": "Programista JavaScript/TypeScript z ponad 7-letnim doświadczeniem. Specjalizacja w Angular, RxJS i zaawansowanej wizualizacji danych dla IoT przemysłowego.",
+    "CardSubtitle": "Programista JavaScript/TypeScript z 7-letnim doświadczeniem. Specjalizacja w Angular, RxJS i zaawansowanej wizualizacji danych dla IoT przemysłowego.",
     "CallMe": "Zadzwoń do mnie",
     "MailMe": "Wyślij mi email",
     "AboutMe": "O mnie",
@@ -13,7 +13,8 @@
     "Programmer": "Programista",
     "WebDeveloper": "Web Developer",
     "datesPGS": "Grudzień 2021 - Styczeń 2023",
-    "datesPMT": "Październik 2020 - Grudzień 2021, Styczeń 2023 - Obecnie",
+    "datesPMT": "Październik 2020 - Grudzień 2021",
+    "datesPMTCurrent": "Styczeń 2023 - Obecnie",
     "datesSDA": "Lipiec 2021 - Grudzień 2021",
     "datesDarlan": "Marzec 2021 - Lipiec 2022",
     "datesQUPI": "Sierpień 2020 - Grudzień 2021",

@@ -1,29 +1,6 @@
 [
   {
-    "date": "datesPGS",
-    "companyName": "PGS Software S.A.",
-    "companyLogoClass": "card__header-image card__header-image--pgs",
-    "jobTitle": "SoftwareDeveloper",
-    "link": "https://www.pgs-soft.com/",
-    "projects": [
-      {
-        "title": "PGSProject1Title",
-        "description": "PGSProject1Description",
-        "details": "PGSProject1Details",
-        "icons": [
-          "windows",
-          "visualstudiocode",
-          "azuredevops",
-          "angular",
-          "materialdesign",
-          "cypress",
-          "swagger"
-        ]
-      }
-    ]
-  },
-  {
-    "date": "datesPMT",
+    "date": "datesPMTCurrent",
     "companyName": "Primetals Technologies Poland Sp. z o.o.",
     "companyLogoClass": "card__header-image card__header-image--pmt",
     "jobTitle": "SoftwareDevelopmentSpecialist",
@@ -38,8 +15,9 @@
           "visualstudiocode",
           "typescript",
           "angular",
-          "materialdesign",
-          "postman"
+          "reactivex",
+          "progress",
+          "apacheecharts"
         ]
       },
       {
@@ -54,9 +32,8 @@
           "typescript",
           "angular",
           "materialdesign",
-          "bootstrap",
-          "postman",
-          "swagger"
+          "apacheecharts",
+          "postman"
         ]
       },
       {
@@ -70,7 +47,33 @@
           "angular",
           "bootstrap",
           "jquery",
-          "lodash"
+          "lodash",
+          "konva"
+        ]
+      }
+    ]
+  },
+  {
+    "date": "datesPGS",
+    "companyName": "PGS Software S.A.",
+    "companyLogoClass": "card__header-image card__header-image--pgs",
+    "jobTitle": "SoftwareDeveloper",
+    "link": "https://www.pgs-soft.com/",
+    "projects": [
+      {
+        "title": "PGSProject1Title",
+        "description": "PGSProject1Description",
+        "details": "PGSProject1Details",
+        "icons": [
+          "windows",
+          "visualstudiocode",
+          "azuredevops",
+          "typescript",
+          "angular",
+          "materialdesign",
+          "reactivex",
+          "cypress",
+          "swagger"
         ]
       }
     ]
@@ -143,10 +146,11 @@
           "git",
           "github",
           "javascript",
-          "nodedotjs",
           "vuedotjs",
+          "vuex",
           "php",
-          "postgresql"
+          "postgresql",
+          "go"
         ]
       }
     ]
@@ -167,7 +171,6 @@
           "visualstudiocode",
           "git",
           "php",
-          "javascript",
           "vuedotjs",
           "mariadb"
         ]
